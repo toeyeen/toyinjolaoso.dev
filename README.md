@@ -1,42 +1,9 @@
-# Nuxt 3 Minimal Starter
+# Toyin's Portfolio
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This is the repository that contains code for my personal website built with Nuxt 3 and Nuxt Content v2
 
-## Setup
+## License
 
-Make sure to install the dependencies:
+Copyright © 2022 - present Jolaoso Toyin. All rights reserved
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+The code and media present in this repository remains an intellectual property of the individual metioned above and therefore CANNOT be copied, modified, redistributed, sublicenced or used as a template without due permission from the author.
