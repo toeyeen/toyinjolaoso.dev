@@ -1,22 +1,24 @@
 <template>
   <div class="blog-card card-box">
     <div class="blog-card__wrapper">
-      <div>
-        <div class="blog-card__tags" v-for="tag in blog.tags">
-          {{ tag }}
-        </div>
+      <div class="blog-card__top">
+        <ul class="blog-card__top-tags">
+          <li class="inline" v-for="tag in blog.tags">
+            {{ tag }}
+          </li>
+        </ul>
 
-        <div class="blog-card__created">
+        <div class="blog-card__top-created">
           {{ blog.createdAt }}
         </div>
       </div>
 
-      <div>
-        <div class="blog-card__title">
+      <div class="blog-card__bottom">
+        <div class="blog-card__bottom-title">
           {{ blog.data.title }}
         </div>
 
-        <div class="blog-card__base">
+        <div class="blog-card__bottom-base">
           <IMdiClock class="inline mr-2" />
           <span> 19 mins read </span>
         </div>
@@ -54,6 +56,35 @@ defineProps<{ blog: Blog }>()
       flex-direction: column;
       align-content: space-between;
       justify-content: space-between;
+    }
+
+    &__top {
+      &-tags {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1.3;
+        & > li:not(:last-child):after {
+          content: ' , ';
+        }
+      }
+      &-created {
+        font-size: 1.3rem;
+        margin-top: 1rem 0;
+        color: #777778;
+      }
+    }
+
+    &__bottom {
+      &-title {
+        font-size: 2.2rem;
+      }
+      &-base {
+        display: flex;
+        align-items: center;
+        margin: 1.2rem 0 1rem 0;
+        font-size: 1.4rem;
+        color: #777778;
+      }
     }
   }
 }
