@@ -26,3 +26,28 @@ export interface Skill {
   id: string
   description: string
 }
+
+export interface Blog {
+  id: string
+  tags: string[]
+  slug: string
+  createdAt: string
+  author: string
+  data: BlogPost
+}
+
+export interface BlogPost {
+  id: string
+  title: string
+  content: string
+}
+
+export type WorkType = 'featured' | 'personal'
+
+export interface Work extends Skill {
+  tags: string[]
+  title: string
+  type: WorkType
+  liveUrl?: string
+  repoUrl?: string
+}

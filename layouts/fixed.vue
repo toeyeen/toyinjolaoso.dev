@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseFork from '~icons/mdi/briefcase'
+import IMdiSourceBranch from '~icons/mdi/briefcase'
 </script>
 
 <style lang="scss">
