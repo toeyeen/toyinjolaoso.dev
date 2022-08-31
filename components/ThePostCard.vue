@@ -19,8 +19,11 @@
         </div>
 
         <div class="blog-card__bottom-base">
-          <IMdiClock class="inline mr-2" />
-          <span> 19 mins read </span>
+          <span>
+            <IMdiClock class="inline mr-2" />
+            <span> 19 mins read </span>
+          </span>
+          <div>Read More</div>
         </div>
       </div>
     </div>
@@ -80,10 +83,25 @@ defineProps<{ blog: Blog }>()
       }
       &-base {
         display: flex;
+        justify-content: space-between;
+        column-gap: 4rem;
         align-items: center;
         margin: 1.2rem 0 1rem 0;
         font-size: 1.4rem;
         color: #777778;
+
+        & > div {
+          text-transform: uppercase;
+          letter-spacing: 1.2;
+          border: 1px solid #446ad4;
+          color: #446ad4;
+          // margin-right: rem;
+          padding: 0.35rem 0.75rem;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          border-radius: 3px;
+        }
       }
     }
   }

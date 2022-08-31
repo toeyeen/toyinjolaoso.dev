@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-let isActiveRoute = ref('learn')
+let isActiveRoute = ref(null)
 
 const route = useRoute()
 
@@ -45,6 +45,10 @@ watch(
     isActiveRoute.value = mainPath
   }
 )
+
+onMounted(() => {
+  isActiveRoute.value = route.path.split('/')[1]
+})
 </script>
 
 <style lang="scss" scoped>

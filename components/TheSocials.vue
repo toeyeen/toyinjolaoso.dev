@@ -67,7 +67,9 @@
     &:hover > span {
       display: inline;
       color: #777778;
+      white-space: nowrap;
       margin-left: 0.3rem;
+      transition: all 0.3s ease;
     }
   }
 }
