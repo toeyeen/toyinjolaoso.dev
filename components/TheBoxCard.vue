@@ -8,11 +8,16 @@
       {{ work.description }}
     </div>
     <div class="personal-card__icon">
-      <span class="inline">
-        <IMdiEye class="inline" />
-        <a target="_blank" :href="work.liveUrl">Live</a>
-        <IMdiSourceBranch class="inline" />
-        <a target="_blank" :href="work.repoUrl">Code</a>
+      <span class="personal-card__icon-items">
+        <span>
+          <IMdiEye class="inline w-6 h-6 mr-2 grayscale" />
+          <a target="_blank" :href="work.liveUrl">Live</a>
+        </span>
+
+        <span>
+          <IMdiSourceBranch class="inline w-6 h-6 mr-2 grayscale" />
+          <a target="_blank" :href="work.repoUrl">Code</a>
+        </span>
       </span>
     </div>
   </div>
@@ -56,7 +61,16 @@ defineProps<{ work: Work }>()
         padding: 0 0.35rem;
       }
     }
-    &__link {
+    &__icon {
+      &-items {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+
+        & > span {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -67,7 +81,6 @@ defineProps<{ work: Work }>()
   color: white;
   flex: 1 1 0%;
   transition: transform 0.2s ease-in;
-  cursor: pointer;
   border-radius: 6px;
   margin-bottom: 1.6rem;
   width: 100%;

@@ -19,10 +19,11 @@
 </template>
 
 <script lang="ts" setup>
-import IMdiEye from '~icons/mdi/briefcase'
-import IMdiSourceBranch from '~icons/mdi/briefcase'
-
 import type { Work } from '../../types/index'
+
+definePageMeta({
+  layout: 'fixed',
+})
 
 const works: Work[] = [
   {
@@ -88,10 +89,6 @@ const featured = computed(() => {
 const personal = computed(() => {
   return works.filter((work) => work.type !== 'featured')
 })
-
-definePageMeta({
-  layout: 'fixed',
-})
 </script>
 
 <!-- <script setup lang="ts"></script> -->
@@ -103,7 +100,6 @@ definePageMeta({
   color: white;
   flex: 1 1 0%;
   transition: transform 0.2s ease-in;
-  cursor: pointer;
   border-radius: 6px;
   margin-bottom: 1.6rem;
   width: 100%;

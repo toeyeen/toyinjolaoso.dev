@@ -89,7 +89,6 @@ function waitForMs(ms) {
 .check {
   position: absolute;
   top: 40%;
-  // right: 0%;
   left: 0%;
   transform: translate(20%, 50%);
 }

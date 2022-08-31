@@ -13,9 +13,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import IMdiSourceBranch from '~icons/mdi/briefcase'
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss">
 .wrapper {

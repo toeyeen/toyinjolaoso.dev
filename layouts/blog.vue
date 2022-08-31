@@ -1,0 +1,29 @@
+<template>
+  <div class="centered">
+    <slot />
+  </div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style lang="scss" scoped>
+@import '../assets/style/scss/main.scss';
+
+.centered {
+  height: 100%;
+  margin: 0 2.4rem;
+  font-size: 1.6rem;
+
+  @include respond(tab-port) {
+    max-width: 720px;
+    margin: 12rem auto;
+    // 900
+  }
+
+  @include respond(tab-land) {
+    max-width: 900px;
+    margin: 12rem auto;
+    // 900
+  }
+}
+</style>

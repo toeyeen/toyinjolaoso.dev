@@ -42,7 +42,6 @@ defineProps<{ blog: Blog }>()
   color: white;
   flex: 1 1 0%;
   transition: transform 0.2s ease-in;
-  cursor: pointer;
   border-radius: 6px;
   min-height: 300px;
   width: 100%;
@@ -96,8 +95,10 @@ defineProps<{ blog: Blog }>()
           border: 1px solid #446ad4;
           color: #446ad4;
           // margin-right: rem;
+          cursor: pointer;
+          font-size: 1.2rem;
           padding: 0.35rem 0.75rem;
-          width: 100px;
+          width: 90px;
           display: flex;
           justify-content: center;
           border-radius: 3px;

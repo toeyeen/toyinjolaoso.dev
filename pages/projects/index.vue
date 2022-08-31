@@ -107,7 +107,6 @@ definePageMeta({
   color: white;
   flex: 1 1 0%;
   transition: transform 0.2s ease-in;
-  cursor: pointer;
   border-radius: 6px;
   margin-bottom: 1.6rem;
   width: 100%;

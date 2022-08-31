@@ -50,6 +50,10 @@ const blogPosts: Blog[] = [
     },
   },
 ]
+
+definePageMeta({
+  layout: 'fixed',
+})
 </script>
 
 <style lang="scss" scoped>
