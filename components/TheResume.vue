@@ -112,7 +112,7 @@ const { data: resume } = await useAsyncData('resume', () =>
 
 <style scoped lang="scss">
 .resume {
-  background-color: #333;
+  background-color: #1b1b1d;
   padding: 2.4rem 3.2rem;
   &-header {
     &__wrapper {
@@ -121,7 +121,7 @@ const { data: resume } = await useAsyncData('resume', () =>
       cursor: pointer;
 
       &-owner {
-        font-family: 'Qwitcher Grypen', sans-serif;
+        font-family: 'air-semibold';
         font-size: 4rem;
         text-transform: uppercase;
       }
@@ -134,8 +134,10 @@ const { data: resume } = await useAsyncData('resume', () =>
     }
     &__role {
       font-size: 1.8rem;
+      color: #cfcfcf;
     }
     &__about {
+      color: #777778;
       font-size: 1.6rem;
       font-weight: 200;
       line-height: 1.4;
@@ -156,9 +158,11 @@ const { data: resume } = await useAsyncData('resume', () =>
       &__header {
         & > span {
           font-size: 2rem;
+          margin-right: 0.5rem;
         }
       }
       &__items {
+        color: #777778;
         margin-left: 7rem;
 
         & > ul {
@@ -175,10 +179,12 @@ const { data: resume } = await useAsyncData('resume', () =>
         }
 
         &-title {
+          color: #e2e2e2;
           margin-left: 4.5rem;
 
           & > span:first-child {
             font-size: 1.8rem;
+            line-height: 1.95;
             // font-style: italic;
           }
 
@@ -191,6 +197,7 @@ const { data: resume } = await useAsyncData('resume', () =>
 
         &-description {
           margin-left: 7rem;
+          color: #777778;
 
           &__summary {
             font-size: 1.5rem;

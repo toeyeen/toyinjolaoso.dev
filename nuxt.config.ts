@@ -4,6 +4,13 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: './static/favicon.ico' },
+      ],
+    },
+  },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   css: ['@/assets/style/css/main.css'],
   // buildModules: [

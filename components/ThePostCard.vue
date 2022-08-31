@@ -69,7 +69,7 @@ defineProps<{ blog: Blog }>()
       }
       &-created {
         font-size: 1.3rem;
-        margin-top: 1rem 0;
+        margin-top: 1rem;
         color: #777778;
       }
     }

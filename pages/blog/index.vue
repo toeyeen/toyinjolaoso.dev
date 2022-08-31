@@ -16,8 +16,7 @@ const blogPosts: Blog[] = [
     slug: '123',
     data: {
       id: '1',
-      title:
-        'Randoms on request Animation Timeframe, Linear Interpolation and CSS transitions',
+      title: '2022 - Happier Than Ever',
       content:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. At porro ut dolore esse natus vero tempore saepe ea repudiandae neque veritatis sint, magni, ad doloremque id excepturi quae architecto ipsa? Optio ullam vitae numquam quo nobis. Modi quas saepe maxime placeat incidunt autem? Quod dolorem ab cumque odio rem vero corporis dolorum quo laboriosam atque odit, porro error itaque sit blanditiis voluptatem est enim ipsum, excepturi hic consequatur? Exercitationem, voluptas? Minima soluta, tempora consequuntur necessitatibus quas id sint perferendis fuga eius est vero possimus quasi neque iure incidunt, saepe error quibusdam minus quae consequatur harum, ratione provident numquam. Quo, vel.',
     },

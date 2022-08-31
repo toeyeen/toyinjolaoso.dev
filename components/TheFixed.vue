@@ -11,17 +11,19 @@
       <p class="mt-6"></p>
     </div>
 
-    <div class="flex justify-center uppercase -rotate-90 text-9xl">
-      <p>{{ routeName }}</p>
-    </div>
+    <TheNavigation />
 
     <div>
+      <TheSocials />
       <span class="text-2xl">
         I love building things for the web and learning about new ideas and
         techniques for productivity and workflows.
       </span>
     </div>
   </div>
+  <!-- <div class="uppercase -rotate-90 check text-9xl">
+    <p>{{ routeName }}</p>
+  </div> -->
 </template>
 
 <script setup lang="ts">
@@ -81,4 +83,14 @@ function waitForMs(ms) {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@import '../assets/style/scss/main.scss';
+
+.check {
+  position: absolute;
+  top: 40%;
+  // right: 0%;
+  left: 0%;
+  transform: translate(20%, 50%);
+}
+</style>
