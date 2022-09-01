@@ -40,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import { formatDate } from '../../../utility/index'
 import { useRoute } from 'vue-router'
 
 const { path } = useRoute()
@@ -57,13 +58,7 @@ const { data } = await useAsyncData(`path-${path}`, () => {
 console.log(data)
 
 const formatPublishDate = computed(() => {
-  const dateFormat = new Date(data.value.date)
-  const options = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }
-  return dateFormat.toLocaleDateString('en-US', options)
+  return formatDate(data.value.createdAt)
 })
 
 definePageMeta({

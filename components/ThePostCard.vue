@@ -9,7 +9,7 @@
         </ul>
 
         <div class="blog-card__top-created">
-          {{ blog.createdAt }}
+          {{ formatPublishDate }}
         </div>
       </div>
 
@@ -33,8 +33,13 @@
 </template>
 
 <script setup lang="ts">
+import { formatDate } from '~~/utility'
 import type { Blog } from '../types/index'
-defineProps<{ blog: Blog }>()
+const props = defineProps<{ blog: Blog }>()
+
+const formatPublishDate = computed(() => {
+  return formatDate(props.blog.createdAt)
+})
 </script>
 
 <style lang="scss" scoped>
