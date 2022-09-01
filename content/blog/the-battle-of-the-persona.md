@@ -1,10 +1,12 @@
 ---
 title: The Battle of Personas
-date: 2022-01-28 16:00:00
 type: post
 blog: true
 excerpt: "When creating something on your own, one of the most challenging aspects I've found is the number of personas competing for your attention."
 tags: [Year in review, Personal]
+createdAt: 2022-01-28 16:00:00
+id: the-battle-of-personas
+author: Jolaoso toyin
 ---
 
 In my experience thus far, one of the hardest parts of being the sole founder of an idea is that there is no one else to mitigate the multitude of personas vying for attention.

@@ -24,16 +24,20 @@ export interface Job {
 
 export interface Skill {
   id: string
-  description: string
+  excerpt: string
 }
 
 export interface Blog {
   id: string
+  title: string
   tags: string[]
-  slug: string
   createdAt: string
   author: string
-  data: BlogPost
+  type: string
+  blog: boolean
+  excerpt: string
+  _path: string
+  // data: BlogPost
 }
 
 export interface BlogPost {

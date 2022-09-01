@@ -11,18 +11,18 @@
 
 .centered {
   height: 100%;
-  margin: 0 2.4rem;
+  margin: 0 2.2rem;
   font-size: 1.6rem;
 
   @include respond(tab-port) {
     max-width: 720px;
-    margin: 12rem auto;
+    margin: 6rem auto;
     // 900
   }
 
   @include respond(tab-land) {
     max-width: 900px;
-    margin: 12rem auto;
+    margin: 7rem auto;
     // 900
   }
 }

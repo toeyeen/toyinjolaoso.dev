@@ -15,7 +15,7 @@
 
       <div class="blog-card__bottom">
         <div class="blog-card__bottom-title">
-          {{ blog.data.title }}
+          {{ blog.title }}
         </div>
 
         <div class="blog-card__bottom-base">
@@ -23,7 +23,9 @@
             <IMdiClock class="inline mr-2" />
             <span> 19 mins read </span>
           </span>
-          <div>Read More</div>
+          <div>
+            <nuxt-link :to="blog._path"> Read More </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
