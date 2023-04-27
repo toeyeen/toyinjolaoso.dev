@@ -24,7 +24,7 @@
             <span> 19 mins read </span>
           </span>
           <div>
-            <nuxt-link :to="blog._path"> Read More </nuxt-link>
+            <nuxt-link :to="blog._path" class="prose"> Read More </nuxt-link>
           </div>
         </div>
       </div>
@@ -44,16 +44,18 @@ const formatPublishDate = computed(() => {
 
 <style lang="scss" scoped>
 .card-box {
+  cursor: pointer;
   padding: 2rem 3.2rem;
-  background-color: #1b1b1d;
-  color: white;
+  background-color: var(--bg-secondary);
+  color: var(--text-main);
   flex: 1 1 0%;
-  transition: transform 0.2s ease-in;
+  transition: transform 0.25s ease-out;
   border-radius: 6px;
   min-height: 300px;
   width: 100%;
+
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
@@ -72,10 +74,12 @@ const formatPublishDate = computed(() => {
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: 1.3;
-        & > li:not(:last-child):after {
+
+        &>li:not(:last-child):after {
           content: ' , ';
         }
       }
+
       &-created {
         font-size: 1.3rem;
         margin-top: 1rem;
@@ -87,6 +91,7 @@ const formatPublishDate = computed(() => {
       &-title {
         font-size: 2.2rem;
       }
+
       &-base {
         display: flex;
         justify-content: space-between;
@@ -96,7 +101,7 @@ const formatPublishDate = computed(() => {
         font-size: 1.4rem;
         color: #777778;
 
-        & > div {
+        &>div {
           text-transform: uppercase;
           letter-spacing: 1.2;
           border: 1px solid #446ad4;

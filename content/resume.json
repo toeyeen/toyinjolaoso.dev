@@ -96,7 +96,7 @@
           "role": "Frontend Engineer",
           "startDate": "22-01-2022",
           "endDate": "Present",
-          "jobDescription": "I’m currently building smart solutions for the gaming and gambling industry with the team here ta Betawave labs",
+          "jobDescription": "I’m currently building smart solutions for the gaming and gambling industry with the team here at Betawave labs",
           "jobDuties": [
             {
               "id": "1",
@@ -108,7 +108,7 @@
             },
             {
               "id": "3",
-              "description": "Engineered state management with Vuex and VueUse."
+              "description": "Engineered state management with Vuex and Pinia."
             },
             {
               "id": "4",
@@ -124,7 +124,7 @@
             },
             {
               "id": "7",
-              "description": "Implemented api request caching on the server to save resources, improve performance and generally reduce load on the backend."
+              "description": "Implemented Api request caching on the server to save resources, improve performance and generally reduce load on the backend."
             }
           ]
         },

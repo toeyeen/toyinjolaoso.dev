@@ -10,8 +10,8 @@ html {
 
 body {
   font-size: 1.4rem;
-  background: $color-bg;
-  color: $color-white;
+  background-color: var(--bg);
+  color: var(--text-main);
   font-family: 'air-light', sans-serif;
 }
 

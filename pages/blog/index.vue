@@ -65,10 +65,11 @@ definePageMeta({
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
 
-  & > :nth-child(even) {
+  &> :nth-child(even) {
     transform: translateY(20px);
+
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

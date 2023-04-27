@@ -27,14 +27,8 @@
     </ul>
 
     <div class="hamburger" @click.native="openMenu = !openMenu">
-      <span
-        class="bar"
-        :class="openMenu ? 'absolute rotate-45 animate' : ''"
-      ></span>
-      <span
-        class="bar"
-        :class="openMenu ? 'absolute -rotate-45 animate' : ''"
-      ></span>
+      <span class="bar" :class="openMenu ? 'absolute rotate-45 animate' : ''"></span>
+      <span class="bar" :class="openMenu ? 'absolute -rotate-45 animate' : ''"></span>
       <span class="bar" :class="openMenu ? 'invisible' : ''"></span>
 
       <nav class="floating-nav dropdown-animate" v-if="openMenu">
@@ -72,6 +66,7 @@ const site = reactive({
 
 <style lang="scss" scoped>
 @import '../assets/style/scss/main.scss';
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -135,9 +130,11 @@ const site = reactive({
     0% {
       transform: scale(0);
     }
+
     80% {
       transform: scale(1.1);
     }
+
     100% {
       transform: scale(1);
     }
@@ -160,6 +157,7 @@ const site = reactive({
       order: 1;
       font-size: 2.4rem;
     }
+
     &-first,
     &-third {
       display: none;
@@ -181,7 +179,7 @@ const site = reactive({
       cursor: pointer;
       gap: 0.5rem;
 
-      & > .bar {
+      &>.bar {
         border: 1px solid white;
         display: flex;
         // position: absolute;

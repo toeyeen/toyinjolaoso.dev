@@ -3,6 +3,7 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -12,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-  css: ['@/assets/style/css/main.css'],
+  css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css'],
   // buildModules: [
   //   [
   //     '@nuxtjs/google-fonts',
@@ -43,4 +44,13 @@ export default defineNuxtConfig({
       Icons(),
     ],
   },
+
+  content: {
+    markdown: {
+      // @ts-expect-error
+      anchorLinks: {
+        depth: 0, exclude: [2, 3, 4, 5, 6]
+      }
+    }
+  }
 })
