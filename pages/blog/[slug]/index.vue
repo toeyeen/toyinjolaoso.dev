@@ -29,6 +29,10 @@
 
 
     <ContentDoc ref="contentRef" :path="path" />
+
+
+    <ThePagination />
+
   </div>
 </template>
 
@@ -41,12 +45,8 @@ import { useTimeToRead } from '~~/composables/useTimeToRead'
 const { path } = useRoute()
 
 const router = useRouter()
-const contentRef = ref(null);
 
 
-
-
-// console.log(value, 1234)
 
 const goBack = () => {
   router.push({ path: '/blog' })
@@ -61,19 +61,12 @@ const timeToRead = useTimeToRead(data.value)
 
 
 
-
-
-
-
-
 const formatPublishDate = computed(() => {
   return formatDate(data.value.createdAt)
 })
 
 
 onMounted(() => {
-  console.log(contentRef)
-  console.log(data)
 })
 
 definePageMeta({

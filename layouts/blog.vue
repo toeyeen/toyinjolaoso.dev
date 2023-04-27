@@ -1,5 +1,6 @@
 <template>
   <div class="centered">
+    <ThemeSwitcher />
     <slot />
   </div>
 </template>

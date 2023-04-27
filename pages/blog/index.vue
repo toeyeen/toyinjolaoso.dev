@@ -52,7 +52,6 @@ const { data: blogPosts } = await useAsyncData(`blog`, () => {
   return queryContent('/blog').find()
 })
 
-console.log(blogPosts)
 
 definePageMeta({
   layout: 'fixed',
