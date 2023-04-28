@@ -3,7 +3,7 @@
     <span class="cursor-pointer">
       <NuxtLink :to="showPath.prev._path" v-if="showPath.prev" class="navigation-link">
         <span class="block capitalize text-xl navigation ">
-          <IMdiArrowLeft class="inline-flex" />
+          <i class="i-carbon:arrow-left inline-flex" />
           Prev Post
         </span>
         <span class="underline text-2xl">
@@ -15,7 +15,7 @@
       <NuxtLink :to="showPath.next._path" v-if="showPath.next" class="navigation-link">
         <span class="block capitalize text-xl navigation">
           Next Post
-          <IMdiArrowRight class="inline-flex" />
+          <i class="i-carbon:arrow-right inline-flex" />
         </span>
 
         <span class="underline text-2xl">

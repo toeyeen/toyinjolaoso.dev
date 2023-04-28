@@ -10,12 +10,12 @@
     <div class="personal-card__icon">
       <span class="personal-card__icon-items">
         <span>
-          <IMdiEye class="inline w-6 h-6 mr-2 grayscale" />
+          <i class="i-carbon:view-filled inline w-6 h-6 mr-2 grayscale" />
           <a target="_blank" :href="work.liveUrl">Live</a>
         </span>
 
         <span>
-          <IMdiSourceBranch class="inline w-6 h-6 mr-2 grayscale" />
+          <i class="i-carbon:branch rotate-90 inline w-6 h-6 mr-2 grayscale" />
           <a target="_blank" :href="work.repoUrl">Code</a>
         </span>
       </span>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
+      <TrailCursor />
       <NuxtPage />
     </NuxtLayout>
   </div>

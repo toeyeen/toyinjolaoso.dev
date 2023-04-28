@@ -6,19 +6,19 @@
 
     <ul class="socials">
       <li class="socials-icon">
-        <IMdiGithub class="inline w-10 h-10 text-gray-600 fill-current" />
+        <i class="i-carbon:logo-github inline w-10 h-10 text-gray-600 fill-current" />
         <span>Github</span>
       </li>
       <li class="socials-icon">
-        <IMdiTwitter class="inline w-10 h-10 text-blue-500 fill-current" />
+        <i class="i-carbon:logo-twitter inline w-10 h-10 text-blue-500 fill-current" />
         <span>Twitter</span>
       </li>
       <li class="socials-icon">
-        <IMdiYoutube class="inline w-10 h-10 text-red-500 fill-current" />
+        <i class="i-carbon:logo-youtube inline w-10 h-10 text-red-500 fill-current" />
         <span>Youtube</span>
       </li>
       <li class="socials-icon">
-        <IMdiAt class="inline w-10 h-10 text-pink-500 fill-current" />
+        <i class="i-carbon:logo-instagram inline w-10 h-10 text-pink-500 fill-current" />
         <span>Mail</span>
       </li>
     </ul>
@@ -45,18 +45,18 @@
     width: 100%;
     transition: all 0.5s ease;
 
-    & > span {
+    &>span {
       display: none;
       text-transform: uppercase;
       font-family: 'air-semibold';
       font-size: 1.3rem;
     }
 
-    & > svg {
+    &>svg {
       filter: grayscale(1);
     }
 
-    &:hover > svg {
+    &:hover>svg {
       filter: grayscale(0);
     }
 
@@ -64,7 +64,7 @@
       background: #fff;
     }
 
-    &:hover > span {
+    &:hover>span {
       display: inline;
       color: #777778;
       white-space: nowrap;
@@ -78,6 +78,7 @@
   0% {
     left: 0;
   }
+
   // 50%{ left : 100%;}
   100% {
     left: 100%;

@@ -19,8 +19,8 @@
         </div>
 
         <div class="blog-card__bottom-base">
-          <span>
-            <IMdiClock class="inline mr-2" />
+          <span class="flex items-center">
+            <IMdiClock class="mr-2 inline-block fill-current" />
             <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read
             </span>
           </span>
@@ -52,7 +52,7 @@ const formatPublishDate = computed(() => {
 
 // })
 
-// const timeToRead = useTimeToRead(data.value)
+const timeToRead = useTimeToRead(props.blog)
 
 </script>
 

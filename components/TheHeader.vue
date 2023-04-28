@@ -182,7 +182,6 @@ const site = reactive({
       &>.bar {
         border: 1px solid white;
         display: flex;
-        // position: absolute;
         width: 100%;
 
         // content: '';

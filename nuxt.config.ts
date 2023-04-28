@@ -12,26 +12,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@unocss/nuxt',],
   css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css'],
-  // buildModules: [
-  //   [
-  //     '@nuxtjs/google-fonts',
-  //     {
-  //       families: {
-  //         Quicksand: true,
-  //         'Qwitcher+Grypen': true,
-  //         subsets: ['latin'],
-  //         display: 'swap',
-  //         prefetch: false,
-  //         preconnect: false,
-  //         preload: false,
-  //         download: true,
-  //         base64: false,
-  //       },
-  //     },
-  //   ],
-  // ],
   vite: {
     plugins: [
       Components({

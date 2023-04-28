@@ -1,7 +1,6 @@
 <template>
   <div class="post-content">
     <div class="go-back">
-      <!-- <IMdiArrowLeft @click="goBack" class="inline-flex" /> -->
       <svg @click="goBack" width="50" height="26" viewBox="0 0 155 46" fill="none" class="mb-4 text-white cursor-pointer"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -11,11 +10,11 @@
     </div>
     <div class="post-content__date">
       <span>
-        <IMdiCalendar />
+        <i class="i-carbon:calendar-heat-map" />
         <span> {{ formatPublishDate }} </span>
       </span>
       <span>
-        <IMdiClock />
+        <i class="i-carbon:alarm" />
         <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read</span>
       </span>
     </div>
@@ -183,6 +182,7 @@ definePageMeta({
 .post-content ol,
 .post-content div {
   color: var(--bg-tertiary);
+  font-weight: 300;
 }
 
 .ys-login__wrapper {

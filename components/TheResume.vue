@@ -5,12 +5,12 @@
         <h1 class="resume-header__wrapper-owner select-none">{{ resume.owner }}</h1>
         <div class="resume-header__wrapper-download">
           <span class="flex items-center">
-            <IMdiLinkedin class="inline w-6 h-6" />
+            <i class="i-carbon:logo-linkedin inline w-6 h-6" />
             LinkedIn
           </span>
 
           <span class="flex items-center">
-            <IMdiDownload class="inline w-6 h-6" /> Download
+            <i class="i-carbon:document-download inline w-6 h-6" /> Download
           </span>
         </div>
       </span>
