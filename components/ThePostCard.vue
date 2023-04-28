@@ -21,7 +21,8 @@
         <div class="blog-card__bottom-base">
           <span>
             <IMdiClock class="inline mr-2" />
-            <span> 19 mins read </span>
+            <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read
+            </span>
           </span>
           <div>
             <nuxt-link :to="blog._path" class="prose"> Read More </nuxt-link>
@@ -36,10 +37,23 @@
 import { formatDate } from '~~/utility'
 import type { Blog } from '../types/index'
 const props = defineProps<{ blog: Blog }>()
+import { useTimeToRead } from '~~/composables/useTimeToRead'
+
 
 const formatPublishDate = computed(() => {
   return formatDate(props.blog.createdAt)
 })
+
+// const { path } = useRoute()
+
+
+// const { data } = await useAsyncData(`path-${path}`, () => {
+//   return queryContent().where({ _path: path }).findOne()
+
+// })
+
+// const timeToRead = useTimeToRead(data.value)
+
 </script>
 
 <style lang="scss" scoped>

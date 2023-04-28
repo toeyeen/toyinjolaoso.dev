@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    IMdiArrowLeft: typeof import('~icons/mdi/arrow-left')['default']
     IMdiAt: typeof import('~icons/mdi/at')['default']
     IMdiBriefcase: typeof import('~icons/mdi/briefcase')['default']
     IMdiCalendar: typeof import('~icons/mdi/calendar')['default']

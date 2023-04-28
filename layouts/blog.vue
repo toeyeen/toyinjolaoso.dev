@@ -1,5 +1,8 @@
 <template>
   <div class="centered">
+    <ClientOnly>
+      <Plum />
+    </ClientOnly>
     <ThemeSwitcher />
     <slot />
   </div>

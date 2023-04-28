@@ -1,5 +1,8 @@
 <template>
   <div class="wrapper">
+    <ClientOnly>
+      <Plum />
+    </ClientOnly>
     <div class="t-fixed">
       <div class="t-fixed-container">
         <TheFixed />
@@ -27,6 +30,10 @@
   height: 100%;
   overflow: hidden;
   position: absolute;
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+  }
 }
 
 .t-fixed {
