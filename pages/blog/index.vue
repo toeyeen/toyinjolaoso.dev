@@ -1,6 +1,7 @@
 <template>
   <div class="blog-wrapper">
     <ThePostCard v-for="blog in blogPosts" :key="blog.id" :blog="blog" />
+
   </div>
 </template>
 

@@ -7,7 +7,7 @@
 
       <a href="/">
         <button>
-          Go Home
+          GO HOME
         </button>
       </a>
     </div>
@@ -43,9 +43,11 @@
     & p {
       margin-top: -4rem;
       margin-bottom: 2rem;
+      font-size: 18px;
     }
 
     &>a {
+      display: inline-block;
       display: flex;
       justify-content: center;
       text-transform: uppercase;
