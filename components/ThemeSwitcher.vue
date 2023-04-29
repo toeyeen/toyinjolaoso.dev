@@ -1,7 +1,7 @@
 <template>
   <div class="absolute right-10 top-10 cursor-pointer">
-    <i class="i-carbon:moon" @click="toggleDark()" v-if="isDark" />
-    <i class="i-carbon:sun" @click="toggleDark()" v-else />
+    <span class="i-carbon:moon fill-current inline-block text-3xl" @click="toggleDark()" v-if="isDark" />
+    <span class="i-carbon:sun  inline-block text-3xl" @click="toggleDark()" v-else />
   </div>
 </template>
 

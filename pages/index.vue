@@ -1,9 +1,18 @@
 <template>
   <div>
-    <ContentDoc path="/uses" />
+    <TheProject />
+    <!-- <div>
+        <ContentDoc path="/uses" />
+      </div> -->
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
 
-<style scoped></style>
+definePageMeta({
+  layout: 'fixed',
+})
+</script>
+
+<style scoped>
+</style>

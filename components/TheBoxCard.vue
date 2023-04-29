@@ -9,13 +9,13 @@
     </div>
     <div class="personal-card__icon">
       <span class="personal-card__icon-items">
-        <span>
-          <i class="i-carbon:view-filled inline w-6 h-6 mr-2 grayscale" />
+        <span class="flex items-center">
+          <i class="i-carbon:view-filled inline-flex w-6 h-6 mr-2 grayscale" />
           <a target="_blank" :href="work.liveUrl">Live</a>
         </span>
 
-        <span>
-          <i class="i-carbon:branch rotate-90 inline w-6 h-6 mr-2 grayscale" />
+        <span class="flex items-center">
+          <i class="i-carbon:branch -rotate-90 inline-flex w-6 h-6  grayscale" />
           <a target="_blank" :href="work.repoUrl">Code</a>
         </span>
       </span>
@@ -55,7 +55,7 @@ defineProps<{ work: Work }>()
 
     &__items {
       text-transform: uppercase;
-      color: #bebebe;
+      color: var(--text-tertiary);
       font-size: 1.2rem;
       font-weight: 100;
       display: inline-flex;

@@ -24,7 +24,8 @@ export interface Job {
 
 export interface Skill {
   id: string
-  excerpt: string
+  description: string
+  // excerpt: string
 }
 
 export interface Blog {

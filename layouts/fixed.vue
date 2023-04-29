@@ -1,8 +1,5 @@
 <template>
   <div class="wrapper">
-    <ClientOnly>
-      <Plum />
-    </ClientOnly>
     <div class="t-fixed">
       <div class="t-fixed-container">
         <TheFixed />
@@ -15,6 +12,9 @@
       </div>
     </div>
   </div>
+  <ClientOnly>
+    <Plum />
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">

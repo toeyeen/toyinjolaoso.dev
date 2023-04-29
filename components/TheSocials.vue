@@ -48,7 +48,6 @@
     &>span {
       display: none;
       text-transform: uppercase;
-      font-family: 'air-semibold';
       font-size: 1.3rem;
     }
 

@@ -92,7 +92,6 @@ const { data: resume } = await useAsyncData('resume', () =>
       cursor: pointer;
 
       &-owner {
-        font-family: 'air-semibold';
         font-size: 4rem;
         text-transform: uppercase;
       }

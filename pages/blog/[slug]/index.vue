@@ -8,13 +8,13 @@
           fill="#77777e" />
       </svg>
     </div>
-    <div class="post-content__date">
+    <div class="post-content__date text-2xl">
       <span>
-        <i class="i-carbon:calendar-heat-map" />
+        <i class="i-carbon:calendar-heat-map text-2xl mr-2" />
         <span> {{ formatPublishDate }} </span>
       </span>
       <span>
-        <i class="i-carbon:alarm" />
+        <i class="i-carbon:alarm text-2xl mr-1" />
         <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read</span>
       </span>
     </div>
@@ -82,11 +82,11 @@ definePageMeta({
     & h1 {
       font-size: 5.5rem;
       margin-bottom: 1.6rem;
-      font-family: 'air-bold';
+      font-weight: bold;
     }
 
     & h2 {
-      font-family: 'air-semibold';
+      font-weight: 600;
       font-size: 41px;
       margin-top: 55px;
     }
