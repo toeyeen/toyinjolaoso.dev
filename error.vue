@@ -5,6 +5,8 @@
       <h1>404</h1>
       <p>Seems like you got lost</p>
 
+      <p> {{ error }} </p>
+
       <a href="/">
         <button>
           GO HOME
@@ -15,9 +17,9 @@
 </template>
 
 <script setup lang="ts">
-// const props = defineProps({
-//   error: Object
-// })
+const props = defineProps({
+  error: Object
+})
 </script>
 
 <style lang="scss" scoped>
