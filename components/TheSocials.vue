@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center my-4 gap-x-4">
     <div class="rounded-full">
-      <img class="h-20" src="../assets/images/toyin's Bitemoji.webp" />
+      <img class="h-20" src="/public/img/toyin_Bitemoji.webp" />
     </div>
 
     <ul class="socials">
