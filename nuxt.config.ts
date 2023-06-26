@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: './static/favicon.ico' },
       ],
     },
-    baseURL: '/toyinjolaoso.dev/'
   },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@unocss/nuxt',],
   css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css'],
