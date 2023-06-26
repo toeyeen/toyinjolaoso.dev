@@ -13,11 +13,6 @@ export default defineNuxtConfig({
     },
     baseURL: '/toyinjolaoso.dev/'
   },
-  ssr: false,
-  target: 'static',
-  router: {
-    base: '/toyinjolaoso.dev/'
-  },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@unocss/nuxt',],
   css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css'],
   vite: {
