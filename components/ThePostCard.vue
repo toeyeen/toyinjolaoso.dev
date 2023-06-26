@@ -20,7 +20,8 @@
 
         <div class="blog-card__bottom-base">
           <span class="flex items-center">
-            <IMdiClock class="mr-2 inline-block fill-current" />
+            <!-- <IMdiClock class="mr-2 inline-block fill-current" /> -->
+            <span class="i-carbon:alarm w-6 h-6 mr-2 inline-block fill-current"> </span>
             <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read
             </span>
           </span>

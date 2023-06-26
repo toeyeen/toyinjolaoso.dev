@@ -5,22 +5,22 @@
     </div>
 
     <ul class="socials">
-      <li class="socials-icon">
+      <a target="_blank" href="https://github.com/toeyeen" class="socials-icon">
         <i class="i-carbon:logo-github inline w-10 h-10 text-gray-600 fill-current" />
         <span>Github</span>
-      </li>
-      <li class="socials-icon">
+      </a>
+      <a target="_blank" href="https://twitter.com/jolaoso_toyin" class="socials-icon">
         <i class="i-carbon:logo-twitter inline w-10 h-10 text-blue-500 fill-current" />
         <span>Twitter</span>
-      </li>
-      <li class="socials-icon">
-        <i class="i-carbon:logo-youtube inline w-10 h-10 text-red-500 fill-current" />
-        <span>Youtube</span>
-      </li>
-      <li class="socials-icon">
+      </a>
+      <a target="_blank" href="https://www.instagram.com/toeyeen/" class="socials-icon">
         <i class="i-carbon:logo-instagram inline w-10 h-10 text-pink-500 fill-current" />
+        <span>Instagram</span>
+      </a>
+      <a target="_blank" href="mailto:oluwatoyinjolaoso@gmail.com" class="socials-icon">
+        <i class="i-carbon:at inline w-10 h-10 text-red-500 fill-current" />
         <span>Mail</span>
-      </li>
+      </a>
     </ul>
   </div>
 </template>

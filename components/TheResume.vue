@@ -31,7 +31,9 @@
             <path d="M128.5 268L17.2157 133.753L239.784 133.753L128.5 268Z" fill="#D9D9D9" />
           </svg>
 
-          <IMdiBriefcase class="absolute top-0 inline text-black left-[30%]" />
+
+          <span class="i-carbon:tool-box inline-flex w-6 h-6 absolute top-0 text-black left-[30%]"> </span>
+
         </span>
 
         <span> {{ experience.title }} </span>

@@ -23,60 +23,82 @@ definePageMeta({
 
 const works: Work[] = [
   {
-    id: '1',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'featured',
+    "id": "1",
+    "title": "Admin Backoffice",
+    "tags": [
+      "Nuxt 2",
+      "Javascript",
+      "Ant Design",
+      "Tailwindcss",
+      "RESTFULL API"
+    ],
+    "description": "Backoffice for a betting company, the project is a full fledge production ready",
+    "liveUrl": "https://staging-yangasport-backoffice.betasportwallet.com/",
+    "repoUrl": "https://gitlab.com/drtobbyas/yangasport-backoffice",
+    "type": "featured"
   },
   {
-    id: '2',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'featured',
-  },
-
-  {
-    id: '3',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'personal',
+    "id": "2",
+    "title": "Pool BAS",
+    "tags": [
+      "Nuxt 3",
+      "Typescript",
+      "UnoCss"
+    ],
+    "description": "Landing Page for a play to earn crypto DAO",
+    "liveUrl": "https://staging-sportbook.betasportwallet.com/",
+    "repoUrl": "https://github.com/toeyeen/yanga-poolbet",
+    "type": "personal"
   },
   {
-    id: '4',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'personal',
+    "id": "3",
+    "title": "30 Days Challenge",
+    "tags": [
+      "Nuxt 3",
+      "Typescript"
+    ],
+    "description": "Landing Page for a play to earn crypto DAO",
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://github.com/toeyeen/30",
+    "type": "personal"
   },
   {
-    id: '5',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'personal',
+    "id": "4",
+    "title": "Dona Todo",
+    "tags": [
+      "Nuxt 3",
+      "Typescript",
+      "Tailwindcss"
+    ],
+    "description": "Building the DONA Todo app with Nuxt Js",
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://github.com/toeyeen/Dona-Todo",
+    "type": "personal"
   },
   {
-    id: '6',
-    title: 'Guild Protocol',
-    tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-    description: 'Landing Page for a play to earn crypto DAO',
-    liveUrl: 'https://google.com',
-    repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-    type: 'personal',
+    "id": "5",
+    "title": "Betawave Website",
+    "tags": [
+      "Vue",
+      "Javascript"
+    ],
+    "description": "Official website for betawave ltd,  a sportbook company in Africa",
+    "liveUrl": "https://about.betawave.io",
+    "repoUrl": "https://github.com/toeyeen/Betawave-io",
+    "type": "personal"
   },
+  {
+    "id": "6",
+    "title": "Vue Africa",
+    "tags": [
+      "Nuxt 2",
+      "Javascript"
+    ],
+    "description": "Replicated the Vue Nation website",
+    "liveUrl": "https://www.vuejsafrica.com/",
+    "repoUrl": "https://gitlab.com/toeyeen/vue-africa",
+    "type": "personal"
+  }
 ]
 
 const featured = computed(() => {
