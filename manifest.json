@@ -478,21 +478,17 @@
       "_nuxt/toyin_Bitemoji.62fb0d8a.webp"
     ]
   },
-  "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.css": {
-    "file": "_nuxt/ProseCode.e63e49c6.css",
-    "src": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.css"
-  },
-  "pages/blog/[slug]/index.css": {
-    "file": "_nuxt/index.5abb65c1.css",
-    "src": "pages/blog/[slug]/index.css"
-  },
-  "pages/blog/index.css": {
-    "file": "_nuxt/index.0f49331f.css",
-    "src": "pages/blog/index.css"
-  },
   "layouts/fixed.css": {
     "file": "_nuxt/fixed.597e0d83.css",
     "src": "layouts/fixed.css"
+  },
+  "pages/learn/index.css": {
+    "file": "_nuxt/index.ae788468.css",
+    "src": "pages/learn/index.css"
+  },
+  "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.css": {
+    "file": "_nuxt/ProseCode.e63e49c6.css",
+    "src": "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.css"
   },
   "layouts/blog.css": {
     "file": "_nuxt/blog.06eb8e65.css",
@@ -502,13 +498,17 @@
     "file": "_nuxt/default.0f82d68c.css",
     "src": "layouts/default.css"
   },
-  "pages/learn/index.css": {
-    "file": "_nuxt/index.ae788468.css",
-    "src": "pages/learn/index.css"
+  "pages/blog/[slug]/index.css": {
+    "file": "_nuxt/index.5abb65c1.css",
+    "src": "pages/blog/[slug]/index.css"
   },
   "virtual:nuxt:/home/runner/work/toyinjolaoso.dev/toyinjolaoso.dev/.nuxt/error-component.css": {
     "file": "_nuxt/error-component.01674423.css",
     "src": "virtual:nuxt:/home/runner/work/toyinjolaoso.dev/toyinjolaoso.dev/.nuxt/error-component.css"
+  },
+  "pages/blog/index.css": {
+    "file": "_nuxt/index.0f49331f.css",
+    "src": "pages/blog/index.css"
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "file": "_nuxt/entry.0230ab50.css",
