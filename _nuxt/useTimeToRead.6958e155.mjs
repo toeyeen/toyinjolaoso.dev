@@ -1,0 +1,1 @@
+const l=t=>{const e=new Date(t),n={year:"numeric",month:"long",day:"numeric"};return e.toLocaleDateString("en-US",n)};function d(t){let e=[];const n=t.body.children;for(let i of n)for(let c of i.children)e.push(c.value);const o=e.toString().replace("undefined",""),r=225,a=o.trim().split(/\s+/).length;return Math.ceil(a/r)}export{l as f,d as u};
