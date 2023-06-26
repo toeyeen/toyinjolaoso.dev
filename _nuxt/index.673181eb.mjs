@@ -1,1 +1,0 @@
-import{_ as o}from"./TheProject.7a5637bf.mjs";import{d as t,o as n,c as r,q as _}from"./entry.bb272cd2.mjs";import"./TheBoxCard.39c87ee1.mjs";import"./_plugin-vue_export-helper.7287ed4b.mjs";const l=t({__name:"index",setup(c){return(a,m)=>{const e=o;return n(),r("div",null,[_(e)])}}});export{l as default};

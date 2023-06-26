@@ -1,0 +1,1 @@
+import{o as t,c as e,q as n,x as c}from"./entry.c5049c18.mjs";import{_ as a}from"./_plugin-vue_export-helper.7287ed4b.mjs";const r={};function s(_,p,m,d,f,i){const o=c;return t(),e("div",null,[n(o,{path:"/about"})])}const x=a(r,[["render",s]]);export{x as default};

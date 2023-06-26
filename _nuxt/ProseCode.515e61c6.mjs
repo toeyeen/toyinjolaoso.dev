@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.7287ed4b.mjs";import{d as r,r as n}from"./entry.c5049c18.mjs";const o=r({props:{code:{type:String,default:""},language:{type:String,default:null},filename:{type:String,default:null},highlights:{type:Array,default:()=>[]}}});function s(e,a,l,d,p,_){return n(e.$slots,"default")}const i=t(o,[["render",s]]);export{i as default};

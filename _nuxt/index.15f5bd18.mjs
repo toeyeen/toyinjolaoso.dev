@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper.7287ed4b.mjs";import{o as t,c as s,b as e}from"./entry.bb272cd2.mjs";const c={},n=e("h1",null,"404",-1),_=e("p",null,"Seems like you got lost",-1),r=[n,_];function l(a,i){return t(),s("div",null,r)}const m=o(c,[["render",l]]);export{m as default};
