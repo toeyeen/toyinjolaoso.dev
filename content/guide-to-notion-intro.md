@@ -4,7 +4,7 @@ createdAt: 2019-06-12 07:53:32
 type: post
 blog: true
 excerpt: So you might have been hearing about this new tool called Notion. And if you've been curious but not sure whether to try it, this series is written for new and experienced users alike!
-tags: [Tooling, Productiivity]
+tags: [Tooling, Productivity]
 id: guide-to-notion-intro
 author: Jolaoso toyin
 ---

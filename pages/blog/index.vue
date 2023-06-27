@@ -49,9 +49,16 @@ import type { Blog } from '~~/types'
 //   },
 // ]
 
-const { data: blogPosts } = await useAsyncData(`blog`, () => {
+
+const { data } = await useAsyncData(`blog`, () => {
   return queryContent('/blog').find()
 })
+
+
+const blogPosts = computed(() => {
+  return data.value.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+})
+
 
 
 definePageMeta({

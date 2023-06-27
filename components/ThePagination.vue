@@ -130,9 +130,6 @@ const showPath = computed(() => {
 
 
 onMounted(() => {
-  console.log(blogPosts.value, 'blogPosts')
-  console.log(path);
-
 })
 
 
