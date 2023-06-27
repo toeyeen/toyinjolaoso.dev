@@ -32,7 +32,7 @@ const works: Work[] = [
       "Tailwindcss",
       "RESTFULL API"
     ],
-    "description": "Backoffice for a betting company, the project is a full fledge production ready",
+    "description": "Backoffice for a betting company, the project is a full fledge production ready. Credentials: Username: LA-APA-0001, Password: 1234567",
     "liveUrl": "https://staging-yangasport-backoffice.betasportwallet.com/",
     "repoUrl": "https://gitlab.com/drtobbyas/yangasport-backoffice",
     "type": "featured"
@@ -45,7 +45,7 @@ const works: Work[] = [
       "Typescript",
       "UnoCss"
     ],
-    "description": "Landing Page for a play to earn crypto DAO",
+    "description": "A sportbook website where you can book a bet, place bets, check transactions and many more exciting features. Credentials: Username: LA-APA-0001, Password: 1234567",
     "liveUrl": "https://staging-sportbook.betasportwallet.com/",
     "repoUrl": "https://github.com/toeyeen/yanga-poolbet",
     "type": "personal"
@@ -55,10 +55,11 @@ const works: Work[] = [
     "title": "30 Days Challenge",
     "tags": [
       "Nuxt 3",
-      "Typescript"
+      "Typescript",
+      "UnoCSS"
     ],
-    "description": "Landing Page for a play to earn crypto DAO",
-    "liveUrl": "https://google.com",
+    "description": "30 days challenge to building exciting projects",
+    "liveUrl": "https://30-toeyeen.vercel.app",
     "repoUrl": "https://github.com/toeyeen/30",
     "type": "personal"
   },
@@ -66,12 +67,13 @@ const works: Work[] = [
     "id": "4",
     "title": "Dona Todo",
     "tags": [
-      "Nuxt 3",
+      "Vue 3",
       "Typescript",
-      "Tailwindcss"
+      "Tailwindcss",
+      "Composition API"
     ],
     "description": "Building the DONA Todo app with Nuxt Js",
-    "liveUrl": "https://google.com",
+    "liveUrl": "https://dona-todo.vercel.app/",
     "repoUrl": "https://github.com/toeyeen/Dona-Todo",
     "type": "personal"
   },

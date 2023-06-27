@@ -9,7 +9,7 @@ id: toyin-30-day-challenge
 author: Jolaoso toyin
 ---
 
-Two days to my birthday, uninterested about a lot of things, while a little stereotypical for this time of year, rather than making some large overtures regarding my goals for 2023, I'm going to simply get started on things that are important to me. So instead of sitting here meticulously planning out how I'm going to accomplish XYZ goals, I'm going to do the opposite and simply execute on what I'm dubbing the Toyin's 30 Day Challenge.
+Two days to my birthday and I am uninterested about a lot of things, while a little stereotypical for this time of year, rather than making some large overtures regarding my goals for 2023, I'm going to simply get started on things that are important to me. So instead of sitting here meticulously planning out how I'm going to accomplish XYZ goals, I'm going to do the opposite and simply execute on what I'm dubbing the Toyin's 30 Day Challenge.
 
 ## What is the Toyin's 30 day challenge?
 

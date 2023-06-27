@@ -32,7 +32,7 @@
           </svg>
 
 
-          <span class="i-carbon:tool-box inline-flex w-6 h-6 absolute top-0 text-black left-[30%]"> </span>
+          <span class="i-carbon:tool-box inline-flex w-8 h-8 absolute top-1 text-black left-[32%]"> </span>
 
         </span>
 
