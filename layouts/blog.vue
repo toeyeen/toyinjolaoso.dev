@@ -3,31 +3,46 @@
     <ClientOnly>
       <Plum />
     </ClientOnly>
-    <ThemeSwitcher />
+    <MobileHeader v-if="isMobile" />
+    <!-- <ThemeSwitcher /> -->
     <slot />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import { useBreakpoints, breakpointsTailwind } from '@vueuse/core';
+
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
+
+const isMobile = breakpoints.smaller('lg')
+
+
+</script>
+
 
 <style lang="scss" scoped>
 @import '../assets/style/scss/main.scss';
 
 .centered {
   height: 100%;
-  margin: 0 2.2rem;
+  padding: 5%;
   font-size: 1.6rem;
+
+
+  @include respond (phone) {
+    margin: 0 2rem;
+  }
 
   @include respond(tab-port) {
     max-width: 720px;
-    margin: 6rem auto;
-    // 900
+    margin: 0 auto;
   }
 
   @include respond(tab-land) {
     max-width: 900px;
-    margin: 7rem auto;
-    // 900
+    margin: 0 auto;
   }
 }
 </style>

@@ -1,90 +1,47 @@
 <template>
-  <div>
+  <div class="mt-10 md:mt-0">
     <div class="featured">
-      <h1 class="featured-title">{{ featured[0].type }}</h1>
-      <TheBoxCard v-for="(feature, index) in featured" :key="index" :work="feature" />
+      <ClientOnly>
+        <div v-if="featured" class="relative">
+          <span v-if="featured[0]" class="lg:text-2em md:text-2.2em text-1.5em  color-transparent absolute left--0.2rem lg:left--2rem md:top--4rem top--3.5rem  font-bold text-stroke-2 text-stroke-hex-aaa uppercase
+          op10">{{ featured[0].type }}
+          </span>
+        </div>
+        <STile :featured="featured[0]" />
+      </ClientOnly>
     </div>
 
     <div class="personal">
-      <h1 class="personal-title">{{ personal[0].type }}</h1>
-      <div class="personal-wrapper">
-        <TheBoxCard v-for="work in personal" :key="work.id" :work="work" />
-      </div>
+      <ClientOnly>
+        <div v-if="personal" class="relative">
+          <span v-if="personal[0]" class="lg:text-2em md:text-2.2em text-1.5em  color-transparent absolute left--0.2rem lg:left--2rem md:top--4rem top--3.5rem  font-bold text-stroke-2 text-stroke-hex-aaa uppercase
+          op10">{{ personal[0].type }}
+          </span>
+        </div>
+        <div class="personal-wrapper">
+          <SCard v-for="work in personal" :key="work?.id" :work="work" />
+        </div>
+      </ClientOnly>
     </div>
+
   </div>
 </template>
 
 <script setup lang="ts">
-// import type { Work } from '../../types/index'
+
 const { data: projects } = await useAsyncData('projects', () =>
   queryContent('/projects').findOne()
 )
 
-const works = projects.value.body
+const works = projects?.value
 
-// const works: Work[] = [
-//   {
-//     id: '1',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'featured',
-//   },
-//   {
-//     id: '2',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'featured',
-//   },
-
-//   {
-//     id: '3',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'personal',
-//   },
-//   {
-//     id: '4',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'personal',
-//   },
-//   {
-//     id: '5',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'personal',
-//   },
-//   {
-//     id: '6',
-//     title: 'Guild Protocol',
-//     tags: ['Nuxtjs', 'Typescript', 'Gsap'],
-//     description: 'Landing Page for a play to earn crypto DAO',
-//     liveUrl: 'https://google.com',
-//     repoUrl: 'https://github.com/toeyeen/toyinjolaoso.dev',
-//     type: 'personal',
-//   },
-// ]
 
 const featured = computed(() => {
-  return works.filter((work) => work.type !== 'personal')
+  return works?.body?.filter((work) => work.type !== 'personal')
 })
+
 const personal = computed(() => {
-  return works.filter((work) => work.type !== 'featured')
+  return works?.body?.filter((work) => work.type !== 'featured')
 })
 
 </script>
@@ -101,27 +58,27 @@ const personal = computed(() => {
   width: 100%;
 
   &:hover {
-    transform: scale(1.05);
+    // transform: scale(1.05);
   }
 }
 
 .featured {
-  &-title {
-    margin: 1.6rem 0;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
+  // &-title {
+  //   margin: 1.2rem 0;
+  //   font-size: 1rem;
+  //   text-transform: uppercase;
+  // }
 
   &-card {
     &__title {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-weight: 400;
     }
 
     &__items {
       text-transform: uppercase;
       color: #bebebe;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 100;
       display: inline-flex;
 
@@ -141,13 +98,14 @@ const personal = computed(() => {
 .personal {
   &-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 4rem;
   }
 
   &-title {
     margin: 3.2rem 0 2.4rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-transform: uppercase;
   }
 }

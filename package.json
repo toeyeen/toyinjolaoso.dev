@@ -21,6 +21,7 @@
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-0",
     "@vueuse/core": "^10.1.0",
+    "dayjs": "^1.11.9",
     "postcss": "^8.4.16",
     "sass": "^1.54.5",
     "shiki": "^0.14.1"

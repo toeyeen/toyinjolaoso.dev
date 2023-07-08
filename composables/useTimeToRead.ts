@@ -2,11 +2,15 @@ export function useTimeToRead(value) {
 
   let untreatedText = [];
 
-  const children = value.body.children
+  const children = value?.body?.children
 
-  for (let child of children) {
-    for (let innerChild of child.children) {
-      untreatedText.push(innerChild.value)
+  if (children) {
+
+    for (let child of children) {
+      for (let innerChild of child.children) {
+        untreatedText.push(innerChild.value)
+      }
+
     }
 
   }

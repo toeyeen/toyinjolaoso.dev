@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-const layout = 'fixed'
+const layout = 'latest'
 </script>
 
 <style lang="scss">

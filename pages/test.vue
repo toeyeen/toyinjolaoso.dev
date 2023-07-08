@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <TheResume />
-  </div>
+  <Resume />
 </template>
 
 <script setup lang="ts">
+
+
 definePageMeta({
-  layout: 'latest',
+  layout: 'latest'
 })
+
 </script>
 
 <style scoped>

@@ -2,11 +2,8 @@
   <div class="error">
     <div class="error-wrapper">
 
-      <h1>404</h1>
-      <p>Seems like you got lost</p>
-
-      <p> {{ error }} </p>
-
+      <h1>{{ error.statusCode }}</h1>
+      <p>Seems like you got lost <span> {{ error.message }} </span> </p>
       <a href="/">
         <button>
           GO HOME
@@ -38,12 +35,12 @@ const props = defineProps({
     min-width: 200px;
 
     & h1 {
-      margin-top: -8rem;
-      font-size: 16rem;
+      // margin-top: -8rem;
+      font-size: 10rem;
     }
 
     & p {
-      margin-top: -4rem;
+      margin-top: -2rem;
       margin-bottom: 2rem;
       font-size: 18px;
     }

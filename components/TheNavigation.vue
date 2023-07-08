@@ -2,21 +2,21 @@
   <ul class="navigation">
     <li class="navigation-item" :class="isActiveRoute == 'learn' ? 'navigation-item-active' : ''">
       <nuxt-link class="navigation-item__link" to="/learn">
-        <span>00</span>
+        <span class="text-sec">01</span>
         <span class="s-divider"></span>
         <span> Work </span>
       </nuxt-link>
     </li>
     <li class="navigation-item" :class="isActiveRoute == 'resume' ? 'navigation-item-active' : ''">
       <nuxt-link class="navigation-item__link" to="/resume">
-        <span>01</span>
+        <span class="text-sec">02</span>
         <span class="s-divider"></span>
         <span> Resume </span>
       </nuxt-link>
     </li>
     <li class="navigation-item" :class="isActiveRoute == 'blog' ? 'navigation-item-active' : ''">
       <nuxt-link class="navigation-item__link" to="/blog">
-        <span>02</span>
+        <span class="text-sec">03</span>
         <span class="s-divider"></span>
         <span> Blogs </span>
       </nuxt-link>
@@ -45,7 +45,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .s-divider {
   margin: 0 2rem;
-  border-bottom: 1px solid #777778;
+  border-bottom: 1px solid var(--c-text-base);
   width: 40px;
   display: inline-block;
   transition: all ease-in 0.2s;
@@ -58,26 +58,27 @@ onMounted(() => {
 
 .navigation {
   &-item {
-    margin: 1.4rem 0;
-    color: #777778;
+    margin: 1rem 0;
+    color: var(--c-text-base);
+    font-size: 1rem;
     transition: all ease-in 0.2s;
 
     &:hover {
-      color: var(--text-main);
+      color: var(--c-secondary);
     }
 
     &-active {
-      color: var(--text-main);
+      color: var(--c-secondary);
 
       & .s-divider {
         width: 80px;
-        border-color: var(--text-main);
+        border-color: var(--c-secondary);
       }
     }
 
     &:hover .s-divider {
       width: 80px;
-      border-color: var(--text-main);
+      border-color: var(--c-secondary);
     }
 
     &__link {

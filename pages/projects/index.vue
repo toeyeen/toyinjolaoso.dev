@@ -8,7 +8,7 @@
 
 
 definePageMeta({
-  layout: 'fixed',
+  layout: 'latest',
 })
 </script>
 

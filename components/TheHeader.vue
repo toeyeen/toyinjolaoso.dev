@@ -71,12 +71,12 @@ const site = reactive({
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   height: 8rem;
   border: 1px solid green;
 
   &-second {
-    font-size: 3.2rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -142,12 +142,12 @@ const site = reactive({
 
   @include respond(tab-port) {
     &-second {
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
 
     &-first,
     &-third {
-      font-size: 1.6rem;
+      font-size: 1rem;
       gap: 1.6rem;
     }
   }
@@ -155,7 +155,7 @@ const site = reactive({
   @include respond(phone) {
     &-second {
       order: 1;
-      font-size: 2.4rem;
+      font-size: 1.2rem;
     }
 
     &-first,

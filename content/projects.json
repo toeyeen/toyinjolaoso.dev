@@ -3,15 +3,15 @@
     "id": "1",
     "title": "Admin Backoffice",
     "tags": [
-      "Nuxt 2",
+      "Nuxt",
       "Javascript",
-      "Ant Design",
-      "Tailwindcss",
-      "RESTFULL API"
+      "Tailwindcss"
     ],
-    "description": "Backoffice for a betting company, the project is a full fledge production ready, Credentials: Username: LA-APA-0001, Password: 1234567",
+    "description": "Backoffice for a betting company, the project is a full fledge production ready.",
+    "shortDescription": " Nuxt powered admin backoffice",
     "liveUrl": "https://staging-yangasport-backoffice.betasportwallet.com/",
     "repoUrl": "https://gitlab.com/drtobbyas/yangasport-backoffice",
+    "image": "/assets/images/projects/featured/admin.png",
     "type": "featured"
   },
   {
@@ -22,7 +22,8 @@
       "Typescript",
       "UnoCss"
     ],
-    "description": "A sportbook website where you can book a bet, place bets, check transactions and many more exciting features. Credentials: Username: LA-APA-0001, Password: 1234567",
+    "description": "A sportbook website where you can book a bet, place bets, check transactions and many more exciting features.",
+    "shortDescription": "Mini Sportbook App for betting",
     "liveUrl": "https://staging-sportbook.betasportwallet.com/",
     "repoUrl": "https://github.com/toeyeen/yanga-poolbet",
     "type": "personal"
@@ -36,6 +37,7 @@
       "UnoCSS"
     ],
     "description": "30 days challenge to building exciting projects",
+    "shortDescription": "30 Existing projects",
     "liveUrl": "https://30-toeyeen.vercel.app",
     "repoUrl": "https://github.com/toeyeen/30",
     "type": "personal"
@@ -46,10 +48,10 @@
     "tags": [
       "Vue 3",
       "Typescript",
-      "Tailwindcss",
-      "Composition API"
+      "Tailwindcss"
     ],
     "description": "Building the DONA Todo app with Nuxt Js",
+    "shortDescription": "Dona Todo Clone",
     "liveUrl": "https://dona-todo.vercel.app/",
     "repoUrl": "https://github.com/toeyeen/Dona-Todo",
     "type": "personal"
@@ -62,6 +64,7 @@
       "Javascript"
     ],
     "description": "Official website for betawave ltd,  a sportbook company in Africa",
+    "shortDescription": "Betawave official website",
     "liveUrl": "https://about.betawave.io",
     "repoUrl": "https://github.com/toeyeen/Betawave-io",
     "type": "personal"
@@ -74,6 +77,7 @@
       "Javascript"
     ],
     "description": "Replicated the Vue Nation website",
+    "shortDescription": "Rebuild of Vue Africa",
     "liveUrl": "https://www.vuejsafrica.com/",
     "repoUrl": "https://gitlab.com/toeyeen/vue-africa",
     "type": "personal"

@@ -10,10 +10,13 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: './static/favicon.ico' },
       ],
+      htmlAttrs: {
+        class: 'dark'
+      }
     },
   },
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@unocss/nuxt',],
-  css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css'],
+  css: ['@/assets/style/css/markdown.css', '@/assets/style/css/main.css', '@/assets/style/css/var.css'],
   vite: {
     plugins: [
       Components({
@@ -34,7 +37,14 @@ export default defineNuxtConfig({
         depth: 0, exclude: [2, 3, 4, 5, 6]
       }
     }
-  }
+  },
+  components: [
+    '~/components/',
+    {
+      path: '~/components/shared',
+      prefix: 's',
+    },
+  ],
 
 
 })

@@ -1,37 +1,38 @@
 <template>
-  <div class="blog-card card-box">
-    <div class="blog-card__wrapper">
-      <div class="blog-card__top">
-        <ul class="blog-card__top-tags">
-          <li class="inline" v-for="tag in blog.tags">
-            {{ tag }}
-          </li>
-        </ul>
+  <client-only>
+    <div class="h-full w-full px-4 py-6 bg-primary-light card list-none cursor-pointer flex flex-col">
+      <header class="hover:text-sec mb-auto ">
+        <div class="flex justify-between items-center">
+          <span class="inline-flex text-sec">
+            {{ formatPublishDate }}
+          </span>
 
-        <div class="blog-card__top-created">
-          {{ formatPublishDate }}
         </div>
-      </div>
-
-      <div class="blog-card__bottom">
-        <div class="blog-card__bottom-title">
+        <div class="font-semibold mt-2 text-base-lg">
           {{ blog.title }}
         </div>
+      </header>
 
+      <main>
         <div class="blog-card__bottom-base">
           <span class="flex items-center">
-            <!-- <IMdiClock class="mr-2 inline-block fill-current" /> -->
-            <span class="i-carbon:alarm w-6 h-6 mr-2 inline-block fill-current"> </span>
-            <span>{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read
+            <span class="i-carbon:alarm w-4 h-4 mr-2 inline-block fill-current"> </span>
+            <span class="text-xs font-RedHatMono">{{ timeToRead }} {{ timeToRead > 1 ? 'Mins' : 'Min' }} read
             </span>
           </span>
-          <div>
+          <div class="flex-1">
             <nuxt-link :to="blog._path" class="prose"> Read More </nuxt-link>
           </div>
         </div>
-      </div>
+      </main>
+
+      <footer class="tools mt-4 mb-auto flex">
+        <ul class="flex gap-x-2 font-light font-RedHatMono text-sm">
+          <li v-for="tag, index in blog.tags" :key="index">{{ tag }}</li>
+        </ul>
+      </footer>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script setup lang="ts">
@@ -70,7 +71,7 @@ const timeToRead = useTimeToRead(props.blog)
   width: 100%;
 
   &:hover {
-    transform: scale(1.05);
+    // transform: scale(1.05);
   }
 }
 
@@ -86,7 +87,7 @@ const timeToRead = useTimeToRead(props.blog)
 
     &__top {
       &-tags {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 1.3;
 
@@ -96,7 +97,7 @@ const timeToRead = useTimeToRead(props.blog)
       }
 
       &-created {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-top: 1rem;
         color: #777778;
       }
@@ -104,7 +105,7 @@ const timeToRead = useTimeToRead(props.blog)
 
     &__bottom {
       &-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
       &-base {
@@ -113,22 +114,27 @@ const timeToRead = useTimeToRead(props.blog)
         column-gap: 4rem;
         align-items: center;
         margin: 1.2rem 0 1rem 0;
-        font-size: 1.4rem;
+        font-size: 1rem;
         color: #777778;
 
         &>div {
           text-transform: uppercase;
-          letter-spacing: 1.2;
-          border: 1px solid #446ad4;
-          color: #446ad4;
-          // margin-right: rem;
+          flex: auto;
+          letter-spacing: 1.1px;
+          border: 1px solid var(--c-secondary);
+          color: var(--c-secondary);
           cursor: pointer;
-          font-size: 1.2rem;
-          padding: 0.35rem 0.75rem;
-          width: 90px;
+          font-size: 14px;
+          padding: 0.35rem 0.5rem;
           display: flex;
           justify-content: center;
           border-radius: 3px;
+          transition: var(--transition);
+
+          &:hover {
+            box-shadow: 4px 4px 0 0 var(--c-secondary);
+            transform: translate(-5px, -5px);
+          }
         }
       }
     }

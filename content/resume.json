@@ -1,252 +1,331 @@
 {
   "owner": "Jolaoso Toyin",
   "role": "Frontend Engineer",
-  "about": "I’m a frontend software developer, passionate about solving problems with code and transforming ideas from pixels to scalable products. I create usable applications with user experience as a top priority using various web tools, languages and technology.",
-  "experience": [
-    {
-      "title": "Core technologies",
-      "items": [
-        {
-          "id": "1",
-          "skill": "Html/Css/Sass"
+  "email": "oluwatoyinjolaoso@gmai.com",
+  "about": "I’m a frontend software developer, passionate about solving problems with code and transforming ideas from pixels to scalable products. I create usable applications with user experience as a top priority using various web tools, languages and technology.\n I also recently started working on open source project by giving back to the community, the best way to get better at any activity is by constantly do it. I love collaborating with other developers and sharing ideas on how to go about an issue",
+  "competencies": {
+    "title": "Competencies",
+    "skills": [
+      {
+        "id": "1",
+        "title": "Frontend",
+        "skillsets": [
+          "Nuxt",
+          "Vue",
+          "React",
+          "SvelteKit",
+          "TailwindCss"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Job Tools",
+        "skillsets": [
+          "Github Actions",
+          "CI/CD",
+          "Git"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Backend",
+        "skillsets": [
+          "Node",
+          "Mongo DB",
+          "Express",
+          "Docker"
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Languages",
+        "skillsets": [
+          "Typescript",
+          "Javascript"
+        ]
+      },
+      {
+        "id": "5",
+        "title": "Mobile",
+        "skillsets": [
+          "PWA"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Testing",
+        "skillsets": [
+          "Vitest",
+          "Cypress",
+          "Jest"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "timelines": [
+      {
+        "id": "1",
+        "employer": "SBT Capital",
+        "skill": "Javascript, Typescript, ",
+        "role": "Frontend Engineer",
+        "startDate": "01-22-2022",
+        "endDate": "Present",
+        "location": {
+          "state": "Lagos",
+          "country": "Nigeria"
         },
-        {
-          "id": "2",
-          "skill": "Nuxt JS"
+        "jobDescription": "I’m currently building smart solutions for the gaming and gambling industry with the team here at Betawave labs",
+        "jobDuties": [
+          {
+            "id": "1",
+            "description": "Crafted a component library from scratch using SCSS Modules to ensure consistency."
+          },
+          {
+            "id": "2",
+            "description": "Used Nuxt Js to deliver optimised, pre-rendered pages when necessary"
+          },
+          {
+            "id": "3",
+            "description": "Engineered state management with Vuex and Pinia."
+          },
+          {
+            "id": "4",
+            "description": "Pulled data from the feeds provider in real time to display live statistics and event odds."
+          },
+          {
+            "id": "5",
+            "description": "Maintained a well structured codebase and used Typescript to improve predictability."
+          },
+          {
+            "id": "6",
+            "description": "Integrated Payment gateway providers"
+          },
+          {
+            "id": "7",
+            "description": "Implemented Api request caching on the server to save resources, improve performance and generally reduce load on the backend."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "employer": "Tobun Professionals",
+        "role": "Software Engineer",
+        "startDate": "05-03-2022",
+        "endDate": "06-09-2022",
+        "jobDescription": "Helped the team build an inventory for medical staffs, and patient. We were customers could book appointment, get electronic copies of their prescriptions.",
+        "location": {
+          "state": "",
+          "country": "Remote [Contract]"
         },
-        {
-          "id": "3",
-          "skill": "Vue JS"
+        "jobDuties": [
+          {
+            "id": "1",
+            "description": "Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability and performance."
+          },
+          {
+            "id": "2",
+            "description": "Reviewed project specifications and designed technology solutions that met or exceeded performance expectations."
+          },
+          {
+            "id": "3",
+            "description": "Tested methodology with writing and execution of test plans, debugging and testing scripts and tools."
+          },
+          {
+            "id": "4",
+            "description": "Collaborated with management, internal and development partners regarding software application design status and project progress."
+          },
+          {
+            "id": "5",
+            "description": "Provided guidance and mentored less-experienced staff members."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "employer": "Vermantia",
+        "role": "Software Developer",
+        "startDate": "01-22-2019",
+        "endDate": "02-22-2021",
+        "location": {
+          "state": "",
+          "country": "Remote"
         },
-        {
-          "id": "4",
-          "skill": "Vuex"
+        "jobDescription": "I’m currently building smart solutions on the decentralised web with the team at Caketools labs",
+        "jobDuties": [
+          {
+            "id": "1",
+            "description": "Introduced agile methodologies and development best practices to division to enhance product development."
+          },
+          {
+            "id": "2",
+            "description": "Pioneered new methods of code review to incorporate wider range of voices."
+          },
+          {
+            "id": "3",
+            "description": "Shipped new featured into the existing project."
+          },
+          {
+            "id": "4",
+            "description": "Designed intuitive graphical user interfaces for the bet acceptance system."
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "employer": "Trivoda Digital",
+        "skill": "HTML/CSS/SASS",
+        "role": "Junior Software Developer",
+        "startDate": "03-01-2017",
+        "endDate": "11-01-2019",
+        "location": {
+          "state": "Lagos",
+          "country": "Nigeria"
         },
-        {
-          "id": "5",
-          "skill": "Pinia"
-        },
-        {
-          "id": "6",
-          "skill": "Tailwind CSS"
-        },
-        {
-          "id": "7",
-          "skill": "Typescript"
-        }
-      ]
-    },
-    {
-      "title": "Competencies",
-      "items": [
-        {
-          "id": "1",
-          "skill": "Node Js"
-        },
-        {
-          "id": "2",
-          "skill": "Express"
-        },
-        {
-          "id": "3",
-          "skill": "Mongo DB"
-        },
-        {
-          "id": "4",
-          "skill": "Unit Testing"
-        },
-        {
-          "id": "5",
-          "skill": "WordPress"
-        },
-        {
-          "id": "6",
-          "skill": "PWAs"
-        }
-      ]
-    },
-    {
-      "title": "Job Tools",
-      "items": [
-        {
-          "id": "1",
-          "skill": "Agile/Scrum"
-        },
-        {
-          "id": "2",
-          "skill": "Version Control"
-        },
-        {
-          "id": "3",
-          "skill": "Best practices"
-        },
-        {
-          "id": "4",
-          "skill": "CI/CD"
-        }
-      ]
-    },
-    {
-      "title": "Work Experience",
-      "timelines": [
-        {
-          "id": "1",
-          "employer": "SBT Capital",
-          "skill": "HTML/CSS/SASS",
-          "role": "Frontend Engineer",
-          "startDate": "22-01-2022",
-          "endDate": "Present",
-          "jobDescription": "I’m currently building smart solutions for the gaming and gambling industry with the team here at Betawave labs",
-          "jobDuties": [
-            {
-              "id": "1",
-              "description": "Crafted a component library from scratch using SCSS Modules to ensure consistency."
-            },
-            {
-              "id": "2",
-              "description": "Used Nuxt Js to deliver optimised, pre-rendered pages when necessary"
-            },
-            {
-              "id": "3",
-              "description": "Engineered state management with Vuex and Pinia."
-            },
-            {
-              "id": "4",
-              "description": "Pulled data from the feeds provider in real time to display live statistics and event odds."
-            },
-            {
-              "id": "5",
-              "description": "Maintained a well structured codebase and used Typescript to improve predictability."
-            },
-            {
-              "id": "6",
-              "description": "Integrated Payment gateway providers"
-            },
-            {
-              "id": "7",
-              "description": "Implemented Api request caching on the server to save resources, improve performance and generally reduce load on the backend."
-            }
-          ]
-        },
-        {
-          "id": "2",
-          "employer": "Tobun Professionals",
-          "role": "Software Engineer[Contract]",
-          "startDate": "03-05-2022",
-          "endDate": "Present",
-          "jobDescription": "I’m currently building smart solutions on the decentralised web with the team at Caketools labs",
-          "jobDuties": [
-            {
-              "id": "1",
-              "description": "Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability and performance."
-            },
-            {
-              "id": "2",
-              "description": "Reviewed project specifications and designed technology solutions that met or exceeded performance expectations."
-            },
-            {
-              "id": "3",
-              "description": "Tested methodology with writing and execution of test plans, debugging and testing scripts and tools."
-            },
-            {
-              "id": "4",
-              "description": "Collaborated with management, internal and development partners regarding software application design status and project progress."
-            },
-            {
-              "id": "5",
-              "description": "Provided guidance and mentored less-experienced staff members."
-            }
-          ]
-        },
-        {
-          "id": "3",
-          "employer": "Vermantia",
-          "role": "Software Developer",
-          "startDate": "22-01-2019",
-          "endDate": "22-02-2021",
-          "jobDescription": "I’m currently building smart solutions on the decentralised web with the team at Caketools labs",
-          "jobDuties": [
-            {
-              "id": "1",
-              "description": "Introduced agile methodologies and development best practices to division to enhance product development."
-            },
-            {
-              "id": "2",
-              "description": "Pioneered new methods of code review to incorporate wider range of voices."
-            },
-            {
-              "id": "3",
-              "description": "Shipped new featured into the existing project."
-            },
-            {
-              "id": "4",
-              "description": "Designed intuitive graphical user interfaces for the bet acceptance system."
-            }
-          ]
-        },
-        {
-          "id": "4",
-          "employer": "Trivoda Digital",
-          "skill": "HTML/CSS/SASS",
-          "role": "Junior Software Developer",
-          "startDate": "01-03-2017",
-          "endDate": "01-11-2019",
-          "jobDescription": "I’m currently building smart solutions on the decentralised web with the team at Caketools labs",
-          "jobDuties": [
-            {
-              "id": "1",
-              "description": "Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality."
-            },
-            {
-              "id": "2",
-              "description": "Collaborated with project managers to select ambitious, but realistic coding milestones on pre- release software project development."
-            },
-            {
-              "id": "3",
-              "description": "Performed regression and system-level testing to verify software quality and function prior to release."
-            },
-            {
-              "id": "4",
-              "description": "Delivered and maintained scalable system architecture to support high-availability Internet site with various internal applications."
-            },
-            {
-              "id": "5",
-              "description": "Coordinated with project management staff on database development timelines and project scope."
-            },
-            {
-              "id": "6",
-              "description": "Collaborated on all stages of systems development lifecycle, from requirement gathering to production releases."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Education",
-      "timelines": [
-        {
-          "id": "1",
-          "employer": " Covenant University",
-          "role": "Petroleum Enginnering [BEng]",
-          "startDate": "11-09-2010",
-          "endDate": "26-06-2015",
-          "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, a nulla. Error, ut atque. Assumenda.",
-          "jobDuties": [
-            {
-              "id": "1",
-              "description": "Member of Society of petroleum engineer's, Top 12% of Class."
-            },
-            {
-              "id": "2",
-              "description": "Elected as Course representative for the department."
-            },
-            {
-              "id": "3",
-              "description": "Member of Society of petroleum engineers."
-            }
-          ]
-        }
-      ]
+        "jobDescription": "I worked on building landing pages and horning my software development skills.",
+        "jobDuties": [
+          {
+            "id": "1",
+            "description": "Revised, modularized and updated old code bases to modern development standards, reducing operating costs and improving functionality."
+          },
+          {
+            "id": "2",
+            "description": "Collaborated with project managers to select ambitious, but realistic coding milestones on pre- release software project development."
+          },
+          {
+            "id": "3",
+            "description": "Performed regression and system-level testing to verify software quality and function prior to release."
+          },
+          {
+            "id": "4",
+            "description": "Delivered and maintained scalable system architecture to support high-availability Internet site with various internal applications."
+          },
+          {
+            "id": "5",
+            "description": "Coordinated with project management staff on database development timelines and project scope."
+          },
+          {
+            "id": "6",
+            "description": "Collaborated on all stages of systems development lifecycle, from requirement gathering to production releases."
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "school": " Covenant University",
+    "degree": "Petroleum Enginnering, Bachelors of Engineering",
+    "startDate": "09-11-2010",
+    "endDate": "06-26-2015",
+    "jobDescription": "I graduated with a Upper Second Class Honors.",
+    "jobDuties": [
+      {
+        "id": "1",
+        "description": "Member of Society of petroleum engineer's, Top 12% of Class."
+      },
+      {
+        "id": "2",
+        "description": "Elected as Course representative for the department."
+      },
+      {
+        "id": "3",
+        "description": "Member of Society of petroleum engineers."
+      }
+    ],
+    "location": {
+      "state": "Ogun",
+      "country": "Nigeria"
     }
-  ]
+  },
+  "awards": {
+    "title": "Awards",
+    "timelines": [
+      {
+        "id": "1",
+        "description": "Top 10% of Class 2015.",
+        "awardee": "Department of Petroleum Engineering, Covenant University.",
+        "date": "02-04-2015"
+      },
+      {
+        "id": "2",
+        "description": "Member of the Chartered Institute of British computer society",
+        "awardee": "British Computer Society.",
+        "date": "02-04-2023"
+      },
+      {
+        "id": "3",
+        "description": "Member of Society of petroleum engineers. (SPE)",
+        "awardee": "Society of Petroleum Engineers",
+        "date": "02-04-2015"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "data": [
+      {
+        "id": 1,
+        "title": "English",
+        "rating": "5"
+      },
+      {
+        "id": 1,
+        "title": "French",
+        "rating": "1"
+      }
+    ]
+  },
+  "talks": {
+    "title": "Talks",
+    "data": [
+      {
+        "id": 1,
+        "title": "New Way to Vue",
+        "organizer": "Expo Lagos 2021",
+        "date": "06-04-2022",
+        "excerpt": "Talked about the reactivity system and Composition API in Vue.js",
+        "link": "https://talks.antfu.me/2021/vue-london/"
+      },
+      {
+        "id": 1,
+        "title": "Testing Component in Vue",
+        "organizer": "Vue Africa 2022",
+        "date": "06-04-2022",
+        "excerpt": "Talked about the reactivity system and Composition API in Vue.js",
+        "link": "https://talks.antfu.me/2021/vue-london/"
+      }
+    ]
+  },
+  "socials": {
+    "title": "Socials",
+    "data": [
+      {
+        "id": 1,
+        "title": "Github",
+        "link": "https://github.com/toeyeen"
+      },
+      {
+        "id": 2,
+        "title": "Linkedin",
+        "link": "https://twitter.com/jolaoso_toyin"
+      },
+      {
+        "id": 3,
+        "title": "Twitter",
+        "link": "https://twitter.com/jolaoso_toyin"
+      },
+      {
+        "id": 4,
+        "title": "Instagram",
+        "link": "https://twitter.com/jolaoso_toyin"
+      },
+      {
+        "id": 5,
+        "title": "Personal",
+        "link": "https://twitter.com/jolaoso_toyin"
+      }
+    ]
+  }
 }

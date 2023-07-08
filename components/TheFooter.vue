@@ -26,7 +26,7 @@ const onChange = () => {
     letter-spacing: 0.1rem;
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     align-items: center;
   }
 }
