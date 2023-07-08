@@ -84,7 +84,7 @@ definePageMeta({
       }
 
       @media only screen and (min-width: 768px) {
-        font-size: 4rem;
+        font-size: 3.2rem;
       }
     }
 

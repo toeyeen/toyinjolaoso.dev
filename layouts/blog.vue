@@ -38,6 +38,8 @@ const isMobile = breakpoints.smaller('lg')
   @include respond(tab-port) {
     max-width: 720px;
     margin: 0 auto;
+    padding: 5% 0px;
+
   }
 
   @include respond(tab-land) {

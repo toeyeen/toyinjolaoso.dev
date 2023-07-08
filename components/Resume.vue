@@ -41,7 +41,7 @@
           Projects
         </div>
         <ul class="mt-4 projects__details flex flex-col gap-y-4">
-          <li v-for="project, idx in projects.body" :key="idx">
+          <li v-for="project, idx in projects?.body" :key="idx">
             <div class="projects__heading flex items-center gap-x-1.5">
               <span class="font-semibold text-base-lg">
                 {{ project.title }}

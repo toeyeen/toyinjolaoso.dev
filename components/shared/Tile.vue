@@ -104,7 +104,13 @@ const props = defineProps({
 
   &::before {
     content: '';
-    background: none;
+    // background: rgba(23, 23, 23, 1);
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // height: 100%;
+    // width: 100%;
+    // z-index: -1;
   }
 
 

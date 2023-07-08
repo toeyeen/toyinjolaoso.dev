@@ -29,11 +29,13 @@
 
 <script setup lang="ts">
 
-
-
 </script>
 
 <style lang="scss" scoped>
+.main-container {
+  padding: 10% 8% 10% 5%;
+}
+
 .laptop-container {
 
   display: none;

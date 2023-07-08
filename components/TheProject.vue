@@ -7,7 +7,9 @@
           op10">{{ featured[0].type }}
           </span>
         </div>
-        <STile :featured="featured[0]" />
+        <div v-if="featured">
+          <STile :featured="featured[0]" />
+        </div>
       </ClientOnly>
     </div>
 
